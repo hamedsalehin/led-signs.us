@@ -60,6 +60,11 @@ export const metadata: Metadata = {
     ],
     apple: '/webicon.png',
   },
+  verification: {
+    other: {
+      'msvalidate.01': 'c501b194359b455e9b5f5c23bb56d1c2',
+    },
+  },
 }
 
 export const viewport: Viewport = {
