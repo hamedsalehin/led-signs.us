@@ -31,7 +31,15 @@ export function AboutSection() {
               Our state-of-the-art visual solutions are widely deployed across international trade shows, corporate conferences, live entertainment venues, airports, shopping centers, and prestigious retail spaces.
             </p>
             <p>
-              By leveraging our robust, highly optimized supply chain, we deliver high-performance, cost-effective commercial LED displays to clients globally without compromising on quality or long-term support.
+              By leveraging our robust, highly optimized supply chain, we deliver high-performance, cost-effective commercial LED displays to clients globally without compromising on quality or long-term support. As the specialized electronic &amp; digital LED display division of{" "}
+              <a 
+                href="https://nano-signs.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-primary hover:underline font-semibold"
+              >
+                Nano Signs
+              </a>, our parent company also provides full-scale commercial storefront signs, custom architectural fabrication, vehicle wraps, and wide-format printing.
             </p>
           </div>
 

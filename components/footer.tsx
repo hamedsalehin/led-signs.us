@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -23,11 +23,20 @@ const popularTags = [
   "Cylinder LED Display",
 ]
 
+const parentCompanyLinks = [
+  { label: "Nano Signs (Parent Company)", href: "https://nano-signs.com" },
+  { label: "Custom Signs & Architecture", href: "https://nano-signs.com/custom-signs" },
+  { label: "Vehicle Wraps & Graphics", href: "https://nano-signs.com/vehicle-signs" },
+  { label: "Custom Banners & Printing", href: "https://nano-signs.com/custom-banners" },
+  { label: "Trade Show Displays", href: "https://nano-signs.com/trade-show" },
+  { label: "Custom Decals & Stickers", href: "https://nano-signs.com/custom-decals" },
+]
+
 export function Footer() {
   return (
     <footer className="bg-card text-muted-foreground border-t border-border mt-auto">
       <div className="mx-auto max-w-7xl px-4 py-12 md:py-16">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -118,6 +127,31 @@ export function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+
+          {/* Parent Company: Nano Signs */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider font-mono text-foreground">
+              Parent Company
+            </h3>
+            <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+              Powered by <a href="https://nano-signs.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Nano Signs</a> — our parent company providing commercial printing, architectural storefronts & complete signage solutions.
+            </p>
+            <ul className="space-y-2.5">
+              {parentCompanyLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm hover:text-primary transition-colors inline-flex items-center gap-1"
+                  >
+                    {link.label}
+                    <ExternalLink className="h-3 w-3 opacity-70" />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
